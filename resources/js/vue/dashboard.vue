@@ -119,9 +119,7 @@
                             <div class="note-content p-4" v-if="model.id">
                                 <h4>{{ model.title }}</h4>
 
-                                <div class="_content">
-                                    {{ model.content }}
-                                </div>
+                                <div class="_content" v-html="model.content" style="white-space: pre-line;"></div>
                             </div>
 
                             <div

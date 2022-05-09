@@ -2347,8 +2347,6 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
-//
-//
 
 /* harmony default export */ __webpack_exports__["default"] = ({
   data: function data() {
@@ -20822,13 +20820,11 @@ var render = function () {
                   ? _c("div", { staticClass: "note-content p-4" }, [
                       _c("h4", [_vm._v(_vm._s(_vm.model.title))]),
                       _vm._v(" "),
-                      _c("div", { staticClass: "_content" }, [
-                        _vm._v(
-                          "\n                                " +
-                            _vm._s(_vm.model.content) +
-                            "\n                            "
-                        ),
-                      ]),
+                      _c("div", {
+                        staticClass: "_content",
+                        staticStyle: { "white-space": "pre-line" },
+                        domProps: { innerHTML: _vm._s(_vm.model.content) },
+                      }),
                     ])
                   : _c(
                       "div",
